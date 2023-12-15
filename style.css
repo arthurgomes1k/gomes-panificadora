@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppons', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 52px 10%;
+    background-color: rgba(0, 0, 0, 0.836);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.267);
+    backdrop-filter: blur(5px);
+}
+
+.logo {
+    font-size: 32px;
+    color: white;
+    font-weight: 600;
+}
+
+.logo span {
+    color: greenyellow;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav a {
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    padding: 5px 20px;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: .3s ease;
+}
+
+.nav a:hover {
+    color: greenyellow;
+    border-bottom: 2px solid yellowgreen;
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+    gap: 2.5em;
+}
+
+.nav-icon i {
+    color: white;
+    font-size: 25px;
+    transition: .3s ease;
+}
+
+.nav-icon i:hover {
+    color: greenyellow;
+    transform: scale(1.1);
+}
+
+#menu-icon {
+    font-size: 30px;
+    color: white;
+    z-index: 1001;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#menu-icon:hover {
+    transform: rotate(180deg);
+    color: greenyellow;
+}
