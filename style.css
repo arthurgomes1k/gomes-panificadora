@@ -81,3 +81,46 @@ header {
     transform: rotate(180deg);
     color: greenyellow;
 }
+
+section {
+    padding: 5% 10%;
+}
+
+.main-home {
+    position: relative;
+    width: 100%;
+    margin-top: 8%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(248, 248, 248);
+    z-index: 10;
+}
+
+.main-home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 50%;
+    background: url(images/padeiro-nice.jpeg);
+    background-size: cover;
+    background-position: left center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+    transform: scale(1.3);
+    z-index: -1;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(135, 255, 119, 0.87);
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.603);
+    width: 50px;
+}
+
