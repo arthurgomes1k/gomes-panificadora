@@ -19,8 +19,9 @@ header {
     justify-content: space-between;
     padding: 52px 10%;
     background-color: rgba(0, 0, 0, 0.836);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.267);
+    border-bottom: 1px solid #BF5B04;
     backdrop-filter: blur(5px);
+    transition: all .2s ease-in-out;
 }
 
 .logo {
@@ -30,7 +31,7 @@ header {
 }
 
 .logo span {
-    color: greenyellow;
+    color: #BF5B04;
 }
 
 .nav {
@@ -48,8 +49,8 @@ header {
 }
 
 .nav a:hover {
-    color: greenyellow;
-    border-bottom: 2px solid yellowgreen;
+    color: #BF5B04;
+    border-bottom: 2px solid #BF5B04;
 }
 
 .nav-icon {
@@ -65,7 +66,7 @@ header {
 }
 
 .nav-icon i:hover {
-    color: greenyellow;
+    color: #BF5B04;
     transform: scale(1.1);
 }
 
@@ -79,7 +80,7 @@ header {
 
 #menu-icon:hover {
     transform: rotate(180deg);
-    color: greenyellow;
+    color: #BF5B04;
 }
 
 section {
@@ -94,6 +95,7 @@ section {
     overflow: hidden;
     background-color: rgb(248, 248, 248);
     z-index: 10;
+    border-bottom: 1px solid #BF5B04;
 }
 
 .main-home::before {
@@ -103,11 +105,10 @@ section {
     right: 0;
     bottom: 0;
     left: 50%;
-    background: url(images/padeiro-nice.jpeg);
+    background: url(imagens/padeiro_1.jpg);
     background-size: cover;
-    background-position: left center;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
-    transform: scale(1.3);
+    transform: scale(1.0);
     z-index: -1;
 }
 
@@ -116,7 +117,7 @@ section {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(135, 255, 119, 0.87);
+    background-color: #BF5B04;
 }
 
 ::-webkit-scrollbar-track {
@@ -130,7 +131,7 @@ section {
 }
 
 .main-text h5 {
-    color: rgb(135, 255, 119);
+    color: #BF5B04;
     font-size: 32px;
     font-weight: 500;
 }
@@ -138,6 +139,14 @@ section {
 .main-text h1 {
     color: black;
     font-size: 92px;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+
+.main-text .down-text {
+    color: black;
+    font-size: 72px;
     line-height: 1.1;
     font-weight: 600;
     margin: 6px 0 10px;
@@ -168,7 +177,7 @@ section {
 
 .main-btn:hover {
     background-color: #111;
-    color: rgb(135, 255, 119);
+    color: #BF5B04;
     z-index: 1500;
 }
 
@@ -188,8 +197,63 @@ section {
 }
 
 .down-arrow i:hover {
-    color: rgb(135, 255, 119);
+    color: #BF5B04;
     background: black;
 }
 
+.row #star {
+    color: rgb(255, 191, 0);
+}
 
+.center-text h2 {
+    color: black;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 2rem;
+    margin-bottom: 5em;
+}
+
+.row {
+    position: relative;
+    transition: all .4s;
+    border: 2px solid rgb(235, 235, 235);
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.row:hover {
+    transform: scale(1.03);
+}
+
+.row img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.row #heart {
+    color: red;
+    position: absolute;
+    right: 20px;
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+
+.row #heart:hover {
+    text-shadow: 0 0 10px red;
+}
+
+header.sticky {
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.836);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.26);
+    backdrop-filter: blur(5px);
+    padding: 20px 10%;
+}
