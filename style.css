@@ -95,7 +95,7 @@ section {
     overflow: hidden;
     background-color: rgb(248, 248, 248);
     z-index: 10;
-    border-bottom: 1px solid #BF5B04;
+    border-bottom: 1px solid #bf5b04de;
 }
 
 .main-home::before {
@@ -184,7 +184,7 @@ section {
 .down {
     position: absolute;
     top: 70%;
-    left: 20%;
+    left: 40%;
 }
 
 .down-arrow i {
@@ -256,4 +256,66 @@ header.sticky {
     border-bottom: 1px solid rgba(255, 255, 255, 0.26);
     backdrop-filter: blur(5px);
     padding: 20px 10%;
+}
+
+.contact {
+    background-color: rgba(0, 0, 0, 0.836);
+    border-top: 1px solid #bf5b04de;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 3rem;
+}
+
+.contact-info h4 {
+    color: #BF5B04;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.contact-info p {
+    color: white;
+    font-size: 16px;
+    font-weight: 1.5;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.contact-info p:hover {
+    transform: translate(5px);
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    margin-top: 1em;
+}
+
+.social-icons i {
+    font-size: 24px;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.social-icons i:hover {
+    color: #BF5B04;
+}
+
+.copyright {
+    background-color: #BF5B04;
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media(max-width:890px) {
+    header {
+        padding: 20px 3%;
+        transition: 0.4s;
+    }
 }
