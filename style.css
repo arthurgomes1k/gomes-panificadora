@@ -405,7 +405,7 @@ header.sticky {
 
     .main-text {
         border-radius: 50px;
-        background-color: rgba(201, 201, 201, 0.411);
+        background-color: rgba(0, 0, 0, 0.411);
         padding: 20px;
         backdrop-filter: blur(5px);
     }
@@ -444,7 +444,14 @@ header.sticky {
     }
 
     .down {
+        background-color: ;
         top: 80%;
         transition: .4s ease;
+    }
+
+    .down-arrow i {
+        border: 2px solid rgba(0, 0, 0, 0.849);
+        background-color: rgba(0, 0, 0, 0.411);
+        color: white;
     }
 }
