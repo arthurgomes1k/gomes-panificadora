@@ -190,8 +190,16 @@ section {
     background: black;
 }
 
+.row .rate {
+    text-align: center;
+}
+
 .row #star {
     color: rgb(255, 191, 0);
+}
+
+.row .pricing {
+    text-align: center;
 }
 
 .center-text h2 {
@@ -307,6 +315,10 @@ header.sticky {
         padding: 20px 3%;
         transition: 0.4s;
     }
+
+    header.sticky {
+        padding: 20px 3%;
+    }
 }
 
 @media(max-width:630px) {
@@ -385,6 +397,7 @@ header.sticky {
 }
 
 @media(max-width:600px) {
+
     .main-home::before {
         left: -30%;
         transition: .4s;
@@ -392,8 +405,8 @@ header.sticky {
 
     .main-text {
         border-radius: 50px;
-        background-color: rgba(110, 109, 109, 0.205);
-        padding: 15px;
+        background-color: rgba(201, 201, 201, 0.411);
+        padding: 20px;
         backdrop-filter: blur(5px);
     }
 
@@ -407,14 +420,27 @@ header.sticky {
         transition: .4s;
     }
 
+    .main-text h5 {
+        color: white;
+    }
+
     .main-text p {
+        color: white;
         font-size: 24px;
         transition: .4s;
     }
 
     .main-btn {
+        border: 1px solid white;
+        color: white;
         padding: 10px 20px;
         transition: .4s;
+    }
+
+    .main-btn:hover {
+        border: 1px solid black;
+        background-color: black;
+        color: #BF5B04;
     }
 
     .down {
