@@ -59,17 +59,6 @@ header {
     gap: 2.5em;
 }
 
-.nav-icon i {
-    color: white;
-    font-size: 25px;
-    transition: .3s ease;
-}
-
-.nav-icon i:hover {
-    color: #BF5B04;
-    transform: scale(1.1);
-}
-
 #menu-icon {
     font-size: 30px;
     color: white;
@@ -317,5 +306,112 @@ header.sticky {
     header {
         padding: 20px 3%;
         transition: 0.4s;
+    }
+}
+
+@media(max-width:630px) {
+    .main-text h1 {
+        font-size: 72px;
+        transition: .4s;
+
+    }
+    .main-text .down-text {
+        font-size: 48px;
+        transition: .4s;
+    }
+
+    .main-text p {
+        font-size: 24px;
+        transition: .4s;
+    }
+
+    .main-btn {
+        padding: 10px 20px;
+        transition: .4s;
+    }
+}
+
+@media(min-width:935px) {
+    .nav-icon {
+        display: none;
+    }
+}
+
+
+@media(max-width:935px) {
+    .nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 130vh;
+        background: rgba(0, 0, 0, 0.836);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 30px;
+        transition: .4s;
+    }
+
+    .nav a {
+        display: block;
+        margin: 18px;
+    }
+
+    .nav.open {
+        right: 0;
+    }
+
+    .main-text h1 {
+        color: #BF5B04;
+    }
+
+    .main-text .down-text {
+        color: #BF5B04;
+    }
+
+    .main-text p {
+        color: black;
+    }
+
+    .main-text h5 {
+        color: black;
+    }
+
+    .down {
+        top: 80%;
+        transition: .4s ease;
+    }
+}
+
+@media(max-width:600px) {
+    .main-home::before {
+        left: -30%;
+        transition: .4s;
+    }
+
+    .main-text h1 {
+        font-size: 48px;
+        transition: .4s;
+
+    }
+    .main-text .down-text {
+        font-size: 48px;
+        transition: .4s;
+    }
+
+    .main-text p {
+        font-size: 24px;
+        transition: .4s;
+    }
+
+    .main-btn {
+        padding: 10px 20px;
+        transition: .4s;
+    }
+
+    .down {
+        top: 80%;
+        transition: .4s ease;
     }
 }
