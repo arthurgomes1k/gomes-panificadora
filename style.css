@@ -73,10 +73,11 @@ header {
 }
 
 section {
-    padding: 5% 10%;
+
 }
 
 .main-home {
+    padding: 5% 10%;
     position: relative;
     width: 100%;
     margin-top: 8%;
@@ -202,6 +203,10 @@ section {
     text-align: center;
 }
 
+.trends {
+    padding: 5% 10%;
+}
+
 .center-text h2 {
     color: black;
     font-size: 28px;
@@ -255,7 +260,12 @@ header.sticky {
     padding: 20px 5%;
 }
 
+.services .center-text h2 {
+
+}
+
 .contact {
+    padding: 5% 10%;
     background-color: rgba(0, 0, 0, 0.836);
     border-top: 1px solid #bf5b04de;
 }
