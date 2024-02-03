@@ -1,1 +1,1 @@
-# projeto-gomes-panificadora
+# Projeto Gomes Panificadora
